@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tv_dialog_wifi_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textColor="@color/font_gray_3"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_wifi_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_dialog_wifi_name"
+        android:layout_marginTop="15dp"
+        android:text="密码"
+        android:textColor="@color/font_gray_9"
+        android:textSize="14sp"/>
+
+    <EditText
+        android:id="@+id/et_dialog_wifi_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_below="@id/tv_dialog_wifi_pwd"
+        android:layout_marginTop="15dp"
+        android:background="@null"
+        android:inputType="textPassword"
+        android:textColor="@color/font_gray_3"
+        android:textSize="18sp"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@id/et_dialog_wifi_pwd"
+        android:background="@color/font_gray_9"/>
+
+    <CheckBox
+        android:id="@+id/cb_dialog_wifi_show_pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_dialog_wifi_pwd"
+        android:layout_marginTop="15dp"
+        android:checked="false"
+        android:text="显示密码"
+        android:textColor="@color/font_gray_9"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_wifi_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_dialog_wifi_show_pwd"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:enabled="false"
+        android:padding="5dp"
+        android:text="确定"
+        android:textColor="@color/select_dialog_btn_text"
+        android:textSize="14dp"/>
+
+    <TextView
+        android:id="@+id/tv_dialog_wifi_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cb_dialog_wifi_show_pwd"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_toLeftOf="@id/tv_dialog_wifi_submit"
+        android:padding="5dp"
+        android:text="取消"
+        android:textColor="@color/select_dialog_btn_text"
+        android:textSize="14dp"/>
+
+</RelativeLayout>

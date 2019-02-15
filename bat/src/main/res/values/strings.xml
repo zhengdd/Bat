@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">WifiBox</string>
+    <string name="hint_safe_mode">通过%s进行保护</string>
+    <string name="hint_status_connect">已连接</string>
+</resources>
